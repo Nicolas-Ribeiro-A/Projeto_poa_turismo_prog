@@ -2,8 +2,8 @@ import Link from 'next/link';
 import './globals.css';
  
 export const metadata = {
-  title: 'POA Turismo',
-  description: 'Pontos turísticos de Porto Alegre',
+  title: 'Catálogo de Rituais',
+  description: 'Catálogo de rituais e seus elementos',
 };
  
 export default function RootLayout({ children }) {
@@ -11,10 +11,10 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
       <body>
         <header className="topo">
-          <Link href="/" className="logo">POA Turismo</Link>
+          <Link href="/" className="logo">Catálogo de Rituais</Link>
           <nav>
             <Link href="/">Início</Link>
-            <Link href="/pontos">Pontos turísticos</Link>
+            <Link href="/rituais">Rituais</Link>
           </nav>
         </header>
         <main className="conteudo">{children}</main>
