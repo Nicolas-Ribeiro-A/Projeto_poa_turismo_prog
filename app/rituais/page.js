@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { connection } from 'next/server';
 import { listarRituais, listarElementos } from '@/lib/db';
@@ -31,6 +32,13 @@ export default async function ListaRituais({ searchParams }) {
         {rituais.map((ritual) => (
           <li key={ritual.id}>
             <Link href={`/rituais/${ritual.id}`} className="card">
+              <Image
+                src={ritual.imagem}
+                alt={`Símbolo do ritual ${ritual.nome}`}
+                width={100}
+                height={100}
+                className="card-imagem"
+              />
               <h2>{ritual.nome}</h2>
               <p>Círculo {ritual.circulo}</p>
               <span className="etiqueta">{ritual.elemento}</span>

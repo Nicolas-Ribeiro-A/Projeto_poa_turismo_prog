@@ -39,6 +39,13 @@ a { color: #2563eb; text-decoration: none; }
 }
 .card:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
 .card h2 { font-size: 1.1rem; color: #1a3a5c; margin-bottom: 0.3rem; }
+.card-imagem {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto 0.75rem;
+}
  
 .etiqueta {
   display: inline-block;
@@ -50,6 +57,13 @@ a { color: #2563eb; text-decoration: none; }
 }
  
 .detalhe { background: white; border-radius: 8px; padding: 2rem; }
+.detalhe-imagem {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin: 1rem 0;
+}
 .detalhe p { margin: 1rem 0; line-height: 1.6; }
 .detalhe dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; }
 .detalhe dt { font-weight: bold; }
