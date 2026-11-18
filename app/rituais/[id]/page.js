@@ -25,11 +25,13 @@ export default async function DetalheRitual({ params }) {
         className="detalhe-imagem"
         unoptimized
       />
-      <span className="etiqueta">{ritual.elemento}</span>
+      <span className={`etiqueta elemento-${ritual.elemento.toLowerCase()}`}>
+        {ritual.elemento}
+      </span>
       <p>{ritual.descricao}</p>
       <dl>
         <dt>círculo</dt>
-        <dd>{ritual.circulo}</dd>
+        <dd>{Number(ritual.circulo)}</dd>
         <dt>execução</dt>
         <dd>{ritual.execucao}</dd>
         <dt>alcance</dt>

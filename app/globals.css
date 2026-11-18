@@ -57,6 +57,10 @@ a { color: #2563eb; text-decoration: none; }
   padding: 0.15rem 0.6rem;
   border-radius: 999px;
 }
+.etiqueta.elemento-sangue { background: #db0c04; color: #fff; }
+.etiqueta.elemento-energia { background: #bb07f2; color: #fff; }
+.etiqueta.elemento-conhecimento { background: #edc305; color: #1f1f1e; }
+.etiqueta.elemento-morte { background: #1f1f1e; color: #fff; }
  
 .detalhe { background: white; border-radius: 8px; padding: 2rem; }
 .detalhe-imagem {

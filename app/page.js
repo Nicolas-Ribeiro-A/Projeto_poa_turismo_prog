@@ -32,8 +32,10 @@ export default async function ListaRituais({ searchParams }) {
           <li key={ritual.id}>
             <Link href={`/rituais/${ritual.id}`} className="card">
               <h2>{ritual.nome}</h2>
-              <p>Círculo {ritual.circulo}</p>
-              <span className="etiqueta">{ritual.elemento}</span>
+              <p>Círculo {Number(ritual.circulo)}</p>
+              <span className={`etiqueta elemento-${ritual.elemento.toLowerCase()}`}>
+                {ritual.elemento}
+              </span>
             </Link>
           </li>
         ))}
