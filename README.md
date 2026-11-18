@@ -2,6 +2,17 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Install dependencies and seed the SQLite database:
+
+```bash
+npm install
+npm run seed
+```
+
+> `.npmrc` sets `ignore-scripts=true` on purpose. `better-sqlite3` ships a
+> prebuilt native binary, and without this npm insists on compiling it with
+> `node-gyp`, which requires Visual Studio C++ build tools on Windows.
+
 First, run the development server:
 
 ```bash
