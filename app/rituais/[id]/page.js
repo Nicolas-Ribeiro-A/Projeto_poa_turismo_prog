@@ -23,6 +23,7 @@ export default async function DetalheRitual({ params }) {
         width={220}
         height={220}
         className="detalhe-imagem"
+        unoptimized
       />
       <span className="etiqueta">{ritual.elemento}</span>
       <p>{ritual.descricao}</p>

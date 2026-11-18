@@ -45,6 +45,8 @@ a { color: #2563eb; text-decoration: none; }
   max-width: 100px;
   height: auto;
   margin: 0 auto 0.75rem;
+  /* Os símbolos da wiki são brancos com fundo transparente. */
+  filter: brightness(0);
 }
  
 .etiqueta {
@@ -63,6 +65,8 @@ a { color: #2563eb; text-decoration: none; }
   max-width: 220px;
   height: auto;
   margin: 1rem 0;
+  /* Os símbolos da wiki são brancos com fundo transparente. */
+  filter: brightness(0);
 }
 .detalhe p { margin: 1rem 0; line-height: 1.6; }
 .detalhe dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; }

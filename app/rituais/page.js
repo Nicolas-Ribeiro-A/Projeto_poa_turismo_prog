@@ -38,6 +38,7 @@ export default async function ListaRituais({ searchParams }) {
                 width={100}
                 height={100}
                 className="card-imagem"
+                unoptimized
               />
               <h2>{ritual.nome}</h2>
               <p>Círculo {ritual.circulo}</p>
